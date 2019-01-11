@@ -1,40 +1,101 @@
 @import "settings";
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   height: 500vh;
+  overflow-x: hidden;
 }
 
-.navigation {
+h1 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+section {
   position: relative;
-  width: $max-width;
-  height: 100px;
-  margin: auto;
-  background-color: grey;
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    right: 0;
-  }
+  top: 80px;
+  max-width: $max-width;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header {
 
-  &__li {
-    list-style-type: none;
+  .navigation {
+    position: fixed;
+    z-index:99;
+    width: 100%;
+    height: 60px;
+    background-color: darkgrey;
+    ul {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: $max-width;
+      height: 100%;
+    }
+
+    &__li {
+      list-style-type: none;
+      flex-grow: 1;
+      text-align: center;
 
 
-    a {
-      color:$color-white;
-      text-decoration: none;
-      text-transform: uppercase;
+      a {
+        color:$color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      &--home{
+        flex-grow: 2;
+      }
     }
   }
 }
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px dashed gray;
+  border-radius: 20px;
+  padding: 30px 30px 50px 30px;
+  margin-bottom: 20px;
+
+  &--head {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  &--text{
+    width: 75%;
+  };
+
+  &--icon{
+    width: 25%;
+    position: relative;
+    i{
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid gray;
+      border-radius: 50%;
+      padding: 20px;
+      font-size: 2rem;
+    }
+  }
+}
+
+
