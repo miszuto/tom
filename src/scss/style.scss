@@ -1,0 +1,40 @@
+@import "settings";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 500vh;
+}
+
+.navigation {
+  position: relative;
+  width: $max-width;
+  height: 100px;
+  margin: auto;
+  background-color: grey;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+  }
+
+  &__li {
+    list-style-type: none;
+
+
+    a {
+      color:$color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
