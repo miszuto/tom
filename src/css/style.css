@@ -47,14 +47,24 @@ header .navigation {
     header .navigation__li--home {
       flex-grow: 2; }
 
+.banner {
+  height: 300px; }
+  .banner img {
+    max-width: 280px;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    bottom: 0; }
+
 .description {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   border: 2px dashed gray;
   border-radius: 20px;
   padding: 30px 30px 50px 30px;
+  margin: 0 auto;
   margin-bottom: 20px; }
   .description--head {
     width: 100%;
