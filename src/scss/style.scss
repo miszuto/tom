@@ -12,13 +12,47 @@ body {
 }
 
 h1 {
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-size: 2.2rem;
+  color: #feffff;
 }
 
 section {
   position: relative;
-  top: 80px;
+  top: 60px;
+  padding-top: 50px;
+
+  &.home-section{
+    background-color: #5fada8
+  }
+
+  &.section-ofert{
+    .page-row{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      h2{
+        width: 100%;
+      }
+    }
+  }
+
+  &.section-about {
+    .page-row{
+      p{
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+    }
+  }
+}
+
+.page-row {
+  position: relative;
   max-width: $max-width;
   left: 50%;
   transform: translateX(-50%);
@@ -30,7 +64,7 @@ header {
     z-index:99;
     width: 100%;
     height: 60px;
-    background-color: darkgrey;
+    background-color: #1a2429;
     ul {
       display: flex;
       align-items: center;
@@ -51,7 +85,7 @@ header {
 
 
       a {
-        color:$color-white;
+        color:#e2f1f1;;
         text-decoration: none;
         text-transform: uppercase;
       }
@@ -63,7 +97,12 @@ header {
 }
 
 .banner{
-height: 300px;
+  height: 300px;
+  .text-wrapper{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
   img {
     max-width: 280px;
     height: auto;
@@ -71,10 +110,15 @@ height: 300px;
     right: 10%;
     bottom: 0;
   }
+  p {
+    color: #1a2429;
+    text-transform: uppercase;
+  }
+
 }
 
 .description {
-  width: 80%;
+  width: 35%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

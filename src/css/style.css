@@ -9,12 +9,30 @@ body {
   overflow-x: hidden; }
 
 h1 {
-  text-transform: uppercase;
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  color: #feffff; }
 
 section {
   position: relative;
-  top: 80px;
+  top: 60px;
+  padding-top: 50px; }
+  section.home-section {
+    background-color: #5fada8; }
+  section.section-ofert .page-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    section.section-ofert .page-row h2 {
+      width: 100%; }
+  section.section-about .page-row p {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+
+.page-row {
+  position: relative;
   max-width: 1226px;
   left: 50%;
   transform: translateX(-50%); }
@@ -24,7 +42,7 @@ header .navigation {
   z-index: 99;
   width: 100%;
   height: 60px;
-  background-color: darkgrey; }
+  background-color: #1a2429; }
   header .navigation ul {
     display: flex;
     align-items: center;
@@ -41,7 +59,7 @@ header .navigation {
     flex-grow: 1;
     text-align: center; }
     header .navigation__li a {
-      color: #fff;
+      color: #e2f1f1;
       text-decoration: none;
       text-transform: uppercase; }
     header .navigation__li--home {
@@ -49,15 +67,22 @@ header .navigation {
 
 .banner {
   height: 300px; }
+  .banner .text-wrapper {
+    position: absolute;
+    top: 30%;
+    left: 15%; }
   .banner img {
     max-width: 280px;
     height: auto;
     position: absolute;
     right: 10%;
     bottom: 0; }
+  .banner p {
+    color: #1a2429;
+    text-transform: uppercase; }
 
 .description {
-  width: 80%;
+  width: 35%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
