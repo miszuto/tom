@@ -16,14 +16,20 @@ section {
   position: relative;
   top: 60px;
   padding-top: 50px; }
+  section h2 {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase; }
   section.home-section {
     background-color: #5fada8; }
-  section.section-ofert .page-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    section.section-ofert .page-row h2 {
-      width: 100%; }
+  section.section-ofert {
+    background-color: #def2f1; }
+    section.section-ofert .page-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
   section.section-about .page-row p {
     width: 80%;
     position: relative;
@@ -89,8 +95,7 @@ header .navigation {
   border: 2px dashed gray;
   border-radius: 20px;
   padding: 30px 30px 50px 30px;
-  margin: 0 auto;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   .description--head {
     width: 100%;
     text-align: center;

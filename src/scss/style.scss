@@ -21,20 +21,24 @@ section {
   position: relative;
   top: 60px;
   padding-top: 50px;
+  h2{
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
   &.home-section{
     background-color: #5fada8
   }
 
   &.section-ofert{
+    background-color: #def2f1;
     .page-row{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-
-      h2{
-        width: 100%;
-      }
+      justify-content: space-around;
     }
   }
 
@@ -125,8 +129,7 @@ header {
   border: 2px dashed gray;
   border-radius: 20px;
   padding: 30px 30px 50px 30px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   &--head {
     width: 100%;
